@@ -1,0 +1,31 @@
+body {
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+.container {
+    width: clampFluid(1756);
+    margin: 0 auto;
+
+    @include laptop {
+        width: 100%;
+        padding: 0 21px;
+    }
+}
+
+.desktop-hidden {
+    @include tablet-above {
+        display: none !important;
+    }
+}
+
+.mobile-hidden {
+    @include tablet {
+        display: none !important;
+    }
+}
+
+.text {
+    color: var(--primary);
+}

@@ -1,13 +1,14 @@
-@import 'tailwindcss';
+/* @import 'tailwindcss';
 
-@import 'tw-animate-css';
+@import 'tw-animate-css'; */
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
+@source '../scss/runtime/*.scss';
 
-@custom-variant dark (&:is(.dark *));
+/* @custom-variant dark (&:is(.dark *)); */
 
-@theme inline {
+/* @theme inline {
     --font-sans: Instrument Sans, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
     --radius-lg: var(--radius);
@@ -56,7 +57,7 @@
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
-}
+} */
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
@@ -66,7 +67,7 @@
   If we ever want to remove these styles, we need to add an explicit border
   color utility to any element that depends on these defaults.
 */
-@layer base {
+/* @layer base {
     *,
     ::after,
     ::before,
@@ -74,15 +75,15 @@
     ::file-selector-button {
         border-color: var(--color-gray-200, currentColor);
     }
-}
-
+} */
+/*
 @layer utilities {
     body,
     html {
         --font-sans:
             'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     }
-}
+} */
 
 :root {
     --background: hsl(0 0% 100%);
@@ -157,11 +158,11 @@
     --sidebar: hsl(240 5.9% 10%);
 }
 
-@layer base {
+/* @layer base {
     * {
         @apply border-border outline-ring/50;
     }
     body {
         @apply bg-background text-foreground;
     }
-}
+} */
