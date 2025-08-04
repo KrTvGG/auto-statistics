@@ -36,6 +36,11 @@ class MainController extends Controller
         //
     }
 
+    public function storeRefill(Request $request)
+    {
+        dd($request);
+    }
+
     /**
      * Display the specified resource.
      */

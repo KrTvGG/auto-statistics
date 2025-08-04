@@ -9,6 +9,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/refill', [MainController::class, 'indexRefill'])->name('refill.index');
+Route::post('/refill/create', [MainController::class, 'storeRefill'])->name('refill.store');
 
 Route::get('dashboard', function () {
     return Inertia::render('Dashboard');
